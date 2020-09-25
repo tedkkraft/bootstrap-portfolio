@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+
+        
+        <!-- added shrink-to-fit=no, not sure if thats bootstrap or not -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bulma CDN -->
+        <link rel="stylesheet" href="./Date Night_files/bulma.css">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="./Date Night_files/font-awesome.min.css">
+        <!-- CSS Sheet -->
+        <link rel="stylesheet" href="./Date Night_files/style.css">
+
+        <title>Date Night</title>
+
+    </head>
+
+<body>
+
+    <main class="container">
+
+        <section class="hero is-danger">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Primary title
+                    </h1>
+                    <h2 class="subtitle">
+                        Primary subtitle
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <!-- Input forms -->
+
+
+        <div class="columns">
+
+            <div class="column is-4 is-offset-1">
+                <h3>What genre of movie do you want to watch?</h3>
+                <div class="box is-danger is-light">
+                    <div class="“control”">
+                        <div class="“select”">
+                            <select>
+                                <option>Select dropdown</option>
+                                <option>With options</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="button is-danger is-normal">Find a Movie!</button>
+                </div>
+            </div>
+
+            <div class="column is-4 is-offset-2">
+                <h3>What type of cuisine do you want to cook?'</h3>
+                <div class="box">
+                    <div class="“control”">
+                        <div class="“select”">
+                            <select>
+                                <option>Select dropdown</option>
+                                <option>With options</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="button is-danger is-normal">Find a recipe!</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Results cards -->
+        <div class="columns">
+            <div class="column is-4 is-offset-1">
+                <div class="card">
+                    <p>Movie result printed here</p>
+                </div>
+            </div>
+
+            <div class="column is-4 is-offset-2">
+                <div class="card">
+                    <p>Recipe result printed here</p>
+                </div>
+            </div>
+        </div>
+
+    </main> <!-- Container div close -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="content has-text-centered">
+            <!-- changed to h3 class -->
+            <h3 class="card-title">Date Night Application Supergroup Studios Inc.</h3>
+            <p class="card-text">If we want card text on footer it would go here</p>
+        </div>
+        <div class="content has-text-centered text-muted">
+            "I'll have what she's having"
+        </div>
+    </div>
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="./Date Night_files/jquery.min.js.download"></script>
+    <!-- Javascript Sheet -->
+    <script type="text/javascript" src="./Date Night_files/script.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
